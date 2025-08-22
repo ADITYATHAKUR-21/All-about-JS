@@ -1,4 +1,4 @@
-// While loop ex
+// While loop
 
 
 let sum = 0;
@@ -9,4 +9,15 @@ while (i <= 5 ) {
   i++
 
 }
-console.log(sum);
+// console.log(sum);
+  
+// 2nd
+let CountDown = [];
+let A = 10;
+
+while (A > 0) {
+  CountDown.push(A);
+  A--
+}
+
+console.log(CountDown);
