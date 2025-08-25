@@ -151,5 +151,37 @@ travaledTown.push(City);
 
 })
 
-console.log(travaledTown);
+// console.log(travaledTown);
 
+
+let Number  = [1, 2, 3, 7, 4, 5, 6];
+let doubledNumbers = [];
+
+for(let i = 1; i <= Number.length; i++){
+
+  if(i === 7) {
+    continue;
+  }
+
+ doubledNumbers.push(i * 2)
+
+}
+// console.log(doubledNumbers);
+
+
+
+let teaName =  [ "chai", "harbal tea", "black tea",  "green tea", "oloon tea"]
+
+let sortTeas = [];
+
+for (const Tea of teaName) {
+
+  if(Tea.length >= 8){
+    continue;
+
+  }
+
+  sortTeas.push(Tea)
+}
+
+console.log(sortTeas);
