@@ -115,4 +115,41 @@ for (const city in BiharCities) {
 }
 
 
-console.log(LargeCities);
+// console.log(LargeCities);
+
+
+//  <--------------- ForEach Loop ---------------->
+// 1st
+
+let TeaCollection = [ "harbal tea", "black tea", "chai", "green tea"];
+
+let avlibilaTeas = [];
+
+TeaCollection.forEach((Tea) => {
+
+  if( Tea === 'chai'){
+    return;
+  }
+
+  avlibilaTeas.push(Tea)
+
+})
+// console.log(avlibilaTeas);
+
+// 2nd
+
+let Town = ["London", "New York", "Paris", "Berlin"];
+let travaledTown =  [];
+
+Town.forEach((City) => {
+
+if ( City ===  "Paris"){
+return;
+}
+
+travaledTown.push(City);
+
+})
+
+console.log(travaledTown);
+
