@@ -1,3 +1,5 @@
+// <--------------- For Loop ---------------->
+
 // 1st
 
 let Teas = ["green tea", "black tea", "chai", "oolon tea"];
@@ -29,4 +31,88 @@ for(let c = 0; c < city.length; c++){
 
 
 }
-console.log(VisitedCitiys);
+// console.log(VisitedCitiys);
+
+// <--------------- Forof Loop ---------------->
+
+// 3rd
+
+let Numbers = [1, 2, 3, 4, 5,];
+let smallNumbers = [];
+
+for (const num of Numbers) {
+
+  if(num === 4){
+    break;
+
+  }
+  smallNumbers.push(num)
+
+}
+
+// console.log(smallNumbers);
+
+// 4th
+
+let Tea = ["chai", "harbal tea", "black tea", "green tea"];
+let preferredTea = [];
+
+
+for (const A of Tea) {
+  if(A === "harbal tea"){
+
+    continue;
+
+  }
+
+  preferredTea.push(A)
+
+}
+// console.log(preferredTea);
+
+// <--------------- ForIn Loop ---------------->
+
+// 1st
+
+let citiesPopulation = {
+  "London": 600000,
+  "Paris": 700000,
+  "New York": 40000,
+  "Berlin": 20000
+}
+
+let cityPopulation = {}
+
+for (const city in citiesPopulation) {
+  if (city === "New York") {
+    break;
+
+  }
+
+  cityPopulation[city] = citiesPopulation[city]
+}
+// console.log(cityPopulation);
+
+// 2nd
+
+let BiharCities = {
+  "Patna": 5000000,
+  "Muzffarpur": 2000000,
+  "Baglpur": 5000000,
+  "Motihari": 3000000,
+  "Sivhar" : 4000000
+};
+
+let LargeCities = {};
+
+for (const city in BiharCities) {
+
+  if (BiharCities[city] < 3000000) {
+    continue;
+
+  }
+  LargeCities[city] = BiharCities[city];
+}
+
+
+console.log(LargeCities);
